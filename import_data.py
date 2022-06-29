@@ -6,7 +6,7 @@ locations = {
     'Kraków': 'https://www.accuweather.com/en/pl/krakow/274455/current-weather/274455'
 }
 
-user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36'
+user_agent = 'Mozilla/5.0 (X11; CrOS armv7l 13597.84.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.98 Safari/537.36'
 
 for location, url in locations.items():
 
