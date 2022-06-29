@@ -97,8 +97,9 @@ def ETL(location_name: str, URL: str, user_agent: str, database: str):
     data['cloud_ceiling'], data['cloud_ceiling_unit'] = data['Cloud Ceiling'].split()
     del data['Cloud Ceiling']
 
-    data['max_uv_index'], data['max_uv_index_desc'] = data['Max UV Index'].split(maxsplit=1)
-    del data['Max UV Index']
+    if data.get('Max UV Index'):
+        data['max_uv_index'], data['max_uv_index_desc'] = data['Max UV Index'].split(maxsplit=1)
+        del data['Max UV Index']
 
     data['location'] = location_name
 
